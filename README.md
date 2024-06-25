@@ -1,8 +1,8 @@
 # hmrc-qualtrics-skin
 
-This is a set of CSS styles that can be applied to a HMRC survey to enchance the default styles so it looks closer to the GDS look and feel.
+Set of CSS overrides that can be applied to a HMRC survey to replicate the GDS look and feel.
 
-Only a subset of the available question types are supported, these are:
+This repo contains a subset of the available question types, these are:
 
 * Information page, this is normally used at the start of the survey to explain the purpose of the survey and to provide the user with any specific instructions.
 * Text input page - Single line / small amount of text
