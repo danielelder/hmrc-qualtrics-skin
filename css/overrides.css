@@ -318,6 +318,14 @@ html.JFEScope .QuestionOuter {
 }
 
 /* Content */
+html .Skin .QuestionText h1 {
+    margin-bottom: 30px;
+}
+
+html .Skin .QuestionText p {
+    margin-bottom: 20px;
+}
+
 html .Skin .QuestionText {
     padding: 40px 0 20px;
 }
