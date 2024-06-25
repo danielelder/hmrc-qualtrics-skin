@@ -1,0 +1,533 @@
+/* Global settings */
+html.JFEScope {
+    overflow-y: scroll;
+    background-color: #f3f2f1;
+}
+
+html.JFEScope #SurveyEngineBody {
+    background: none;
+}
+
+html.JFEScope .SkinInner {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+}
+
+/* Header */
+html.JFEScope #HeaderContainer {
+    background-color: #0b0c0c;
+    height: 50px;
+    padding: 7px;
+}
+
+html.JFEScope #Header {
+    max-width: 1000px;
+    padding: 0 20px;
+}
+
+html.JFEScope #Header img {
+    height: 30px !important;
+    width: 148px !important;
+}
+
+/* Footer */
+html .Skin #BrandingFooter, .Skin #Footer {
+    margin: auto;
+    max-width: none;
+    border-top: 1px solid #b1b4b6;
+}
+
+html .Skin #BrandingFooter, .Skin #Footer > div {
+    margin: 20px auto 40px;
+    max-width: 1000px;
+    padding: 20px 10px;
+}
+
+html .Skin #PushStickyFooter {
+    height: auto;
+}
+
+.govuk-footer {
+    font-family: GDS Transport,arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    font-size: .875rem;
+    line-height: 1.1428571429;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    border-top: 1px solid #b1b4b6;
+    color: #0b0c0c;
+    background: #f3f2f1
+}
+
+@media print {
+    .govuk-footer {
+        font-family: sans-serif
+    }
+}
+
+@media (min-width: 40.0625em) {
+    .govuk-footer {
+        font-size:1rem;
+        line-height: 1.25
+    }
+}
+
+@media print {
+    .govuk-footer {
+        font-size: 14pt;
+        line-height: 1.2
+    }
+}
+
+@media (min-width: 40.0625em) {
+    .govuk-footer {
+        padding-top:40px;
+        padding-bottom: 25px
+    }
+}
+
+.govuk-footer__link {
+    font-family: GDS Transport,arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-decoration: underline;
+    text-decoration-thickness: max(1px,.0625rem);
+    text-underline-offset: .1578em
+}
+
+@media print {
+    .govuk-footer__link {
+        font-family: sans-serif
+    }
+}
+
+.govuk-footer__link:hover {
+    text-decoration-thickness: max(3px,.1875rem,.12em);
+    -webkit-text-decoration-skip-ink: none;
+    text-decoration-skip-ink: none;
+    -webkit-text-decoration-skip: none;
+    text-decoration-skip: none
+}
+
+.govuk-footer__link:focus {
+    outline: 3px solid transparent;
+    color: #0b0c0c;
+    background-color: #fd0;
+    box-shadow: 0 -2px #fd0,0 4px #0b0c0c;
+    text-decoration: none;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone
+}
+
+.govuk-footer__link:link,.govuk-footer__link:visited {
+    color: #0b0c0c
+}
+
+@media print {
+    .govuk-footer__link:link,.govuk-footer__link:visited {
+        color: #000
+    }
+}
+
+.govuk-footer__link:hover {
+    color: rgba(11,12,12,.99)
+}
+
+.govuk-footer__link:active,.govuk-footer__link:focus {
+    color: #0b0c0c
+}
+
+@media print {
+    .govuk-footer__link:active,.govuk-footer__link:focus {
+        color: #000
+    }
+}
+
+.govuk-footer__section-break {
+    margin: 0 0 30px;
+    border: 0;
+    border-bottom: 1px solid #b1b4b6
+}
+
+@media (min-width: 40.0625em) {
+    .govuk-footer__section-break {
+        margin-bottom:50px
+    }
+}
+
+.govuk-footer__meta {
+    display: flex;
+    margin-right: -15px;
+    margin-left: -15px;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: center
+}
+
+.govuk-footer__meta-item {
+    margin-right: 15px;
+    margin-bottom: 25px;
+    margin-left: 15px
+}
+
+.govuk-footer__meta-item--grow {
+    flex: 1
+}
+
+@media (max-width: 40.0525em) {
+    .govuk-footer__meta-item--grow {
+        flex-basis:320px
+    }
+}
+
+.govuk-footer__licence-logo {
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: top;
+    forced-color-adjust: auto;
+    margin-bottom: 6px;
+}
+
+@media (max-width: 48.0525em) {
+    .govuk-footer__licence-logo {
+        margin-bottom:15px
+    }
+}
+
+.govuk-footer__licence-description {
+    display: inline-block;
+    line-height: 1.25;
+}
+
+.govuk-footer__copyright-logo {
+    display: inline-block;
+    min-width: 125px;
+    padding-top: 112px;
+    /* URL path to crest logo */
+    background-image: url(../images/govuk-crest-2x.png);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: 125px 102px;
+    text-align: center;
+    white-space: nowrap
+}
+
+.govuk-footer__inline-list {
+    margin-top: 0;
+    margin-bottom: 15px;
+    padding: 0
+}
+
+.govuk-footer__meta-custom {
+    margin-bottom: 20px
+}
+
+.govuk-footer__inline-list-item {
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 5px
+}
+
+.govuk-footer__heading {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #b1b4b6
+}
+
+@media (max-width: 40.0525em) {
+    .govuk-footer__heading {
+        padding-bottom:10px
+    }
+}
+
+.govuk-footer__navigation {
+    margin-right: -15px;
+    margin-left: -15px
+}
+
+.govuk-footer__navigation:after {
+    content: "";
+    display: block;
+    clear: both
+}
+
+.govuk-footer__section {
+    display: inline-block;
+    margin-bottom: 30px;
+    vertical-align: top
+}
+
+.govuk-footer__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    column-gap: 30px
+}
+
+@media (min-width: 48.0625em) {
+    .govuk-footer__list--columns-2 {
+        column-count:2
+    }
+
+    .govuk-footer__list--columns-3 {
+        column-count: 3
+    }
+}
+
+.govuk-footer__list-item {
+    margin-bottom: 15px
+}
+
+@media (min-width: 40.0625em) {
+    .govuk-footer__list-item {
+        margin-bottom:20px
+    }
+}
+
+.govuk-footer__list-item:last-child {
+    margin-bottom: 0
+}
+
+
+
+/* Content area */
+html.JFEScope #SkinContent {
+    /* border-top: 10px solid #1d70b3; */
+    margin: 0 auto;
+    max-width: 1000px;
+    /* padding: 40px 0 80px; */
+}
+
+html.JFEScope #Questions {
+    margin: 0 20px;
+    border-top: 10px solid #1d70b3;
+}
+
+html.JFEScope .QuestionOuter {
+    padding-bottom: 0;
+}
+
+@media (min-width: 40.0625em) {
+    html.JFEScope .QuestionOuter {
+        width: 66.6666666667%;
+    }
+}
+
+/* Content */
+html .Skin .QuestionText {
+    padding: 40px 0 20px;
+}
+
+html .Skin #Buttons {
+    padding: 20px 20px 40px !important;
+}
+
+html .QuestionText h1 span {
+    font-size: 2.25rem !important;
+    line-height: 1.1111111111;
+}
+
+html .QuestionText ul {
+    padding-inline-start: 20px;
+}
+
+html .QuestionText a {
+    color: #1d70b8;
+    text-decoration-thickness: max(1px, .0625rem);
+    text-underline-offset: .1578em;
+}
+
+html .QuestionText a:hover {
+    color: #003078;
+    text-decoration-thickness: max(3px, .1875rem, .12em);
+    text-decoration-skip-ink: none;
+}
+
+html .QuestionText a:focus {
+    color: #0b0c0c;
+    outline: 3px solid rgba(0, 0, 0, 0);
+    color: #0b0c0c;
+    background-color: #fd0;
+    box-shadow: 0 -2px #fd0, 0 4px #0b0c0c;
+    text-decoration: none;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+}
+
+html .Skin .QuestionBody {
+    overflow: visible;
+    padding: 0 3px;
+}
+
+html .Skin .ValidationError {
+    color: #d4351c;
+    font-size: 1.1875rem;
+    font-weight: 700;
+    padding: 0;
+}
+
+html .Skin #Buttons {
+    text-align: left;
+}
+
+html .Skin #SkinContent #Buttons input {
+    color: #fff;
+    background-color: #00703c;
+    border-radius: 0;
+    box-shadow: 0 2px 0 #002d18;
+    transition: none;
+}
+
+html .Skin #SkinContent #Buttons input:hover {
+    background-color: #005a30;
+}
+
+html .Skin #SkinContent #Buttons input:focus {
+    border-color: #fd0;
+    border-radius: 0;
+    outline: 3px solid rgba(0, 0, 0, 0);
+    box-shadow: inset 0 0 0 1px #fd0;
+}
+
+html .Skin #SkinContent #Buttons input:focus:not(:active):not(:hover) {
+    border-color: #fd0;
+    color: #0b0c0c;
+    background-color: #fd0;
+    box-shadow: 0 2px 0 #0b0c0c;
+}
+
+html .Skin #SkinContent legend p {
+    color: #505a5f;
+}
+
+html .Skin #SkinContent input[type=text],
+html .Skin #SkinContent textarea {
+    font-weight: 400;
+    font-size: 1.1875rem;
+    line-height: 1.3157894737;
+    box-sizing: border-box;
+    height: 2.5rem;
+    margin-top: 0;
+    min-height: 40px;
+    padding: 5px;
+    border: 2px solid #0b0c0c;
+    border-radius: 0;
+    background-color: #ffffff;
+}
+
+html .Skin #SkinContent input[type=text] {
+    height: 2.5rem;
+    min-height: 40px;
+}
+
+html .Skin #SkinContent textarea {
+    min-height: 120px;
+}
+
+html .Skin #SkinContent input[type=text]:focus,
+html .Skin #SkinContent textarea:focus {
+    outline: 3px solid #fd0;
+    outline-offset: 0;
+    box-shadow: inset 0 0 0 2px;
+}
+
+html .Skin #SkinContent label + input[type=text],
+html .Skin #SkinContent label + textarea {
+    margin:20px 0 0 70px;
+}
+
+html .Skin label.MultipleAnswer {
+    padding: 20px 0 0px 70px !important;
+    margin-bottom: 6px;
+}
+
+html .Skin label.SingleAnswer {
+    padding: 20px 0 0px 60px !important;
+    margin-bottom: 6px;
+}
+
+html .Skin label.MultipleAnswer, 
+html .Skin label.SingleAnswer,
+html .Skin label.MultipleAnswer.q-focused, 
+html .Skin label.SingleAnswer.q-focused,
+html .Skin label.MultipleAnswer.q-checked, 
+html .Skin label.SingleAnswer.q-checked,
+html .Skin label.MultipleAnswer:hover, 
+html .Skin label.SingleAnswer:hover,
+html .Skin label.MultipleAnswer.q-checked:hover, 
+html .Skin label.SingleAnswer.q-checked:hover,
+html .Skin label.MultipleAnswer.q-checked.q-focused, 
+html .Skin label.SingleAnswer.q-checked.q-focused,
+html .Skin label.MultipleAnswer.q-checked.q-focused:hover, 
+html .Skin label.SingleAnswer.q-checked.q-focused:hover {
+    background: none;
+}
+
+.Skin label.SingleAnswer>span::before {
+    width: 36px;
+    height: 36px;
+    left: 3px;
+}
+
+.Skin label.SingleAnswer.q-checked>span::before,
+.Skin label.SingleAnswer.q-checked.q-focused>span::before {
+    background-color: #000000 !important;
+    border: 2px solid #000000 !important;
+    -webkit-box-shadow: inset 0 0 0 8px #fff;
+    -moz-box-shadow: inset 0 0 0 8px #fff;
+    box-shadow: inset 0 0 0 8px #fff;
+    -webkit-animation: none;
+    -moz-animation: none;
+    -o-animation: none;
+    animation: none;
+}
+
+.Skin label.SingleAnswer.q-focused>span::before, 
+.Skin label.SingleAnswer.q-checked.q-focused>span::before {
+    box-shadow: inset 0 0 0 8px #fff, 0 0 0 4px #fd0;
+}
+
+.Skin label.MultipleAnswer>span::before {
+    width: 36px;
+    height: 36px;
+    left: 3px;
+    vertical-align: middle;
+    margin-right: 10px;
+    border-radius: 0;
+    -webkit-animation: none;
+    -moz-animation: none;
+    -o-animation: none;
+    animation: none;
+}
+
+.Skin label.MultipleAnswer.q-focused>span::before {
+    outline: 3px solid #000000;
+    outline-offset: -4px;
+    box-shadow: 0 0 0 3px #fd0;
+}
+
+.Skin label.MultipleAnswer.q-checked>span::before {
+    background-color: #ffffff !important;
+    border: 2px solid #000000 !important;
+    -webkit-animation: none;
+    -moz-animation: none;
+    -o-animation: none;
+    animation: none;
+}
+
+.Skin label.MultipleAnswer.q-checked>span::after {
+    top: 20px;
+    left: 11px;
+    width: 19px;
+    height: 8px;
+    transform: rotate(-45deg);
+    border: solid;
+    border-width: 0 0 5px 5px;
+    border-top-color: transparent;
+    content: "";
+    position: absolute;
+}
