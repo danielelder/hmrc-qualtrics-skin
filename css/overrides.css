@@ -15,6 +15,14 @@ html.JFEScope .SkinInner {
     max-width: 100%;
 }
 
+html .Skin #Plug a:hover,
+html .Skin #Plug a:focus {
+    text-decoration: underline;
+    background-color: #fd0;
+    color: #000;
+    transition: none;
+}
+
 /* Header */
 html.JFEScope #HeaderContainer {
     background-color: #0b0c0c;
@@ -61,6 +69,23 @@ html .Skin #PushStickyFooter {
     border-top: 1px solid #b1b4b6;
     color: #0b0c0c;
     background: #f3f2f1
+}
+
+.govuk-visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    clip: rect(0 0 0 0) !important;
+    -webkit-clip-path: inset(50%) !important;
+    clip-path: inset(50%) !important;
+    border: 0 !important;
+    white-space: nowrap !important;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 @media print {
@@ -322,12 +347,16 @@ html .Skin .QuestionText h1 {
     margin-bottom: 30px;
 }
 
+html .Skin .QuestionText h2 {
+    margin-bottom: 20px;
+}
+
 html .Skin .QuestionText p {
     margin-bottom: 20px;
 }
 
 html .Skin .QuestionText {
-    padding: 40px 0 20px;
+    padding: 40px 0 5px;
 }
 
 html .Skin #Buttons {
@@ -371,10 +400,15 @@ html .Skin .QuestionBody {
     padding: 0 3px;
 }
 
+html .Skin .QuestionBody:empty {
+    padding: 0 !important;
+}
+
 html .Skin .ValidationError {
     color: #d4351c;
     font-size: 1.1875rem;
     font-weight: 700;
+    margin: 30px 0 0 0;
     padding: 0;
 }
 
@@ -387,12 +421,25 @@ html .Skin #SkinContent #Buttons input {
     background-color: #00703c;
     border-radius: 0;
     box-shadow: 0 2px 0 #002d18;
+    margin-right: 15px;
     transition: none;
 }
 
 html .Skin #SkinContent #Buttons input:hover {
     background-color: #005a30;
 }
+
+html .Skin #SkinContent #Buttons input.PreviousButton {
+    background-color: #f3f2f1;
+    box-shadow: 0 2px 0 #929191;
+    color: #0b0c0c;
+}
+
+html .Skin #SkinContent #Buttons input.PreviousButton:hover {
+    background-color: #dbdad9;
+}
+
+
 
 html .Skin #SkinContent #Buttons input:focus {
     border-color: #fd0;

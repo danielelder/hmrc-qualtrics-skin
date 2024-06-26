@@ -1,292 +1,178 @@
-<html class="JFEScope" lang="EN"><head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="mobile-web-app-capable" content="yes">
-    <title>Qualtrics Survey | Qualtrics Experience Management</title>
-    
-        <link rel="dns-prefetch" href="//eu.qualtrics.com/WRQualtricsShared/">
-        <link rel="preconnect" href="//eu.qualtrics.com/WRQualtricsShared/">
-    
-    <meta name="description" content="The most powerful, simple and trusted way to gather experience data. Start your journey to experience management and try a free account today.">
-    <meta name="robots" content="noindex">
-    <meta id="meta-viewport" name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2.5">
-    <meta property="og:title" content="Qualtrics Survey | Qualtrics Experience Management">
-    <meta property="og:description" content="The most powerful, simple and trusted way to gather experience data. Start your journey to experience management and try a free account today.">
-    
-    <script>(function(w) {
-  'use strict';
-  if (w.history && w.history.replaceState) {
-    var path = w.location.pathname;
-    var jfePathRegex = /^\/jfe\d+\//;
+<!DOCTYPE html>
+<html class="JFEScope" lang="EN">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <title>Error message - Example pages - HMRC Qualtrics Survey Styles</title>
+  <meta name="robots" content="noindex">
+  <meta id="meta-viewport" name="viewport"
+    content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2.5">
+</head>
+<body id="SurveyEngineBody" style="direction: ltr;">
 
-    if (jfePathRegex.test(path)) {
-      w.history.replaceState(null, null, w.location.href.replace(path, path.replace(jfePathRegex, '/jfe/')));
+  <link href="../css/stylesheet.css" rel="stylesheet">
+  <link href="../css/overrides.css" rel="stylesheet">
+
+  <style type="text/css">
+    #pace {
+      background: #fff;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 1
     }
-  }
-})(window);
-</script>
-<link rel="apple-touch-icon" href="/brand-management/apple-touch-icon"><link type="image/x-icon" rel="icon" href="https://hmrccustomerlab.qualtrics.com/brand-management/brand-assets/hmrccustomerlab/favicon.ico"><script type="text/javascript" charset="utf-8" async="" src="/jfe/static/dist/c/db.dac06806287b3a202c9b.js"></script><script type="text/javascript" charset="utf-8" async="" src="/jfe/static/dist/c/jsApi.9280391dff50a2a432ef.js"></script><script type="text/javascript" charset="utf-8" async="" src="/jfe/static/dist/c/prototype.53cc12e39c138e5e551a.js"></script><script type="text/javascript" charset="utf-8" async="" src="/jfe/static/dist/c/te.c3f7ad4abeb97c347074.js"></script><script data-runid="5906780345887934">Qualtrics.SurveyEngine.addOnload(Qualtrics.uniformLabelHeight);</script><script data-runid="5906780345887934">
-//TM6 Question Text Cell Padding
-	//JFE
-	Page.on('ready:imagesLoaded',function() {
-		var t = jQuery(".QuestionText table");
-	  for (i=0; i<t.length; i++) {
-	    if (t[i].cellPadding != undefined) {
-	      var p = t[i].cellPadding + "px";
-	      t.eq(i).find("th").css("padding",p);
-	      t.eq(i).find("td").css("padding",p);
-	    }
-	  }
-	});
-	//SE
-	jQuery(window).load(function() {
-		if (jQuery("div").hasClass("JFE") == false) {
-	    var t = jQuery(".QuestionText table");
-	    for (i=0; i<t.length; i++) {
-	      if (t[i].cellPadding != undefined) {
-	        var p = t[i].cellPadding + "px";
-	        t.eq(i).find("th").css("padding",p);
-	        t.eq(i).find("td").css("padding",p);
-	      }
-	    }
-		};
-	});
-//TM21 iOS Text Box Width Fix
-	//JFE
-	Page.on('ready:imagesLoaded',function() {
-		function isIE () {
-	  	var myNav = navigator.userAgent.toLowerCase();
-	  	return (myNav.indexOf('msie') != -1) ? parseInt(myNav.split('msie')[1]) : false;
-		}
-		if (!isIE()) {
-			var mq = window.matchMedia( "(max-width: 480px)" );
-			if (mq.matches == true) {
-				jQuery(".Skin .MC .TextEntryBox").css("width","100%");
-				jQuery(".Skin .TE .ESTB .InputText").css("width","100%");
-				jQuery(".Skin .TE .FORM .InputText").css("width","100%");
-				jQuery(".Skin .TE .ML .InputText").css("width","100%");
-				jQuery(".Skin .TE .PW .InputText").css("width","100%");
-				jQuery(".Skin .TE .SL .InputText").css("width","100%");
-				jQuery(".Skin .TE .FollowUp .InputText").css("width","100%");
-			};
-		};
-	});
-	//SE
-	jQuery(window).load(function() {
-		function isIE () {
-	  	var myNav = navigator.userAgent.toLowerCase();
-	  	return (myNav.indexOf('msie') != -1) ? parseInt(myNav.split('msie')[1]) : false;
-		}
-		if (!isIE()) {
-			var mq = window.matchMedia( "(max-width: 480px)" );
-			if (jQuery("div").hasClass("JFE") == false && mq.matches == true) {
-				jQuery(".Skin .MC .TextEntryBox").css("width","100%");
-				jQuery(".Skin .TE .ESTB .InputText").css("width","100%");
-				jQuery(".Skin .TE .FORM .InputText").css("width","100%");
-				jQuery(".Skin .TE .ML .InputText").css("width","100%");
-				jQuery(".Skin .TE .PW .InputText").css("width","100%");
-				jQuery(".Skin .TE .SL .InputText").css("width","100%");
-				jQuery(".Skin .TE .FollowUp .InputText").css("width","100%");
-			};
-		};
-	});
-</script><script data-runid="5906780345887934">
-//Wrapping up those pesky SE labels like Christmas
-jQuery(window).load(function() {
-		if (jQuery("div").hasClass("JFE") == false) {
-	    var mcs = jQuery(".Skin .MC span.LabelWrapper");
-			for (i = 0; i < mcs.length; i++) {
-				mcs.eq(i).find("label").wrapInner("<span></span>");
-			}
-	};
-});
-</script><script data-runid="5906780345887934">
-	Page.on('ready:imagesLoaded',function() {
-	if (jQuery(".ProgressBarContainer label").length != 0  && jQuery(".SystemEndOfSurvey").length == 0){
-jQuery("#ProgressBar").addClass("verbose");
-	}
-	});
-</script></head>
-    <body id="SurveyEngineBody" style="direction: ltr;">
 
-        <link href="../css/stylesheet.css" rel="stylesheet">
-    <link href="../css/overrides.css" rel="stylesheet">
-    <noscript><style>#pace{display: none;}</style><div style="padding:8px 15px;font-family:Helvetica,Arial,sans-serif;background:#fcc;border:1px solid #c55">Javascript is required to load this page.</div></noscript>
-    
-        <style type="text/css">#pace{background:#fff;position:absolute;top:0;bottom:0;left:0;right:0;z-index:1}#pace::before{content:'';display:block;position:fixed;top:30%;right:50%;width:50px;height:50px;border:6px solid transparent;border-top-color:#0b6ed0;border-left-color:#0b6ed0;border-radius:80px;animation:q 1s linear infinite;margin:-33px -33px 0 0;box-sizing:border-box}@keyframes q{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}
-</style>
-        
-    
-    <script type="text/javascript">
-      window.QSettings = {
-          
-        jfeVersion: "3c993bd06c776e69a61da1ad0c2f30c575d81ae9",
-        publicPath: "/jfe/static/dist/",
-        cbs: [], bootstrapSkin: null, ab: false,
-        getPT: function(cb) {
-          if (this.pt !== undefined) {
-            cb(this.success, this.pt);
-          } else {
-            this.cbs.push(cb);
-          }
-        },
-        setPT: function(s, pt) {
-          this.success = s;
-          this.pt = pt;
-          if (this.cbs.length) {
-            for (var i = 0; i < this.cbs.length; i++) {
-              this.cbs[i](s, pt);
-            }
-          }
-        }
-      };
-    </script>
-    
-    <script>!function(e){function a(c){if(r[c])return r[c].exports;var t=r[c]={i:c,l:!1,exports:{}};return e[c].call(t.exports,t,t.exports,a),t.l=!0,t.exports}var c=window.webpackJsonp;window.webpackJsonp=function(r,n,f){for(var o,d,b,i=0,u=[];i<r.length;i++)d=r[i],t[d]&&u.push(t[d][0]),t[d]=0;for(o in n)Object.prototype.hasOwnProperty.call(n,o)&&(e[o]=n[o]);for(c&&c(r,n,f);u.length;)u.shift()();if(f)for(i=0;i<f.length;i++)b=a(a.s=f[i]);return b};var r={},t={40:0};a.e=function(e){function c(){o.onerror=o.onload=null,clearTimeout(d);var a=t[e];0!==a&&(a&&a[1](new Error("Loading chunk "+e+" failed.")),t[e]=void 0)}var r=t[e];if(0===r)return new Promise(function(e){e()});if(r)return r[2];var n=new Promise(function(a,c){r=t[e]=[a,c]});r[2]=n;var f=document.getElementsByTagName("head")[0],o=document.createElement("script");o.type="text/javascript",o.charset="utf-8",o.async=!0,o.timeout=12e4,a.nc&&o.setAttribute("nonce",a.nc),o.src=a.p+"c/"+({0:"slidercontrol-jfe",1:"timing",2:"fileupload",3:"relevantid",4:"matrix",5:"slider",6:"mc",7:"scoring",8:"te",9:"hotspot",10:"hl",11:"cs",12:"ro",13:"fancybox",14:"toc",15:"ss",16:"db",17:"recaptchav3",18:"draw",19:"hmap",20:"pgr",21:"meta",22:"captcha",23:"response-summary",24:"mp",25:"preview",26:"mockForm",27:"sbs",28:"dd",29:"jsApi",30:"slide",31:"flip",32:"fade",33:"barrel-roll",34:"focus-handler",38:"prototype",39:"advance-button-template"}[e]||e)+"."+{0:"ca12677e5273e3d16fcc",1:"f67f827a4207049b94c2",2:"79cd6b56b060670f0aaf",3:"c375115d03adee97fe4c",4:"f8c4525fe3865da56ef7",5:"a39e8bd84793dce762ec",6:"19204e8370ced59d9cdb",7:"94f152c84bbcdb744962",8:"c3f7ad4abeb97c347074",9:"55463b1bf8522a2f90bd",10:"c229a2a8198e1d6caf69",11:"b2a9e486d893e05bb973",12:"aa1d281ff5d6ef525015",13:"4b7c9830c7109e613ca8",14:"f975a02b511c74261cb2",15:"5a7ad13a3bfff589bebc",16:"dac06806287b3a202c9b",17:"03222b8c33a33c08ac40",18:"6bdc3c60ff36a464f52c",19:"12bbb94de11877c96447",20:"4b16eea17dd4a6f031eb",21:"0fd1f1c0bbcc013f3c91",22:"5992820432bce9b77d15",23:"523ffc96b4a767463c1d",24:"8ff82210df973b5a7ca8",25:"0c32e05edbd7b2e5b509",26:"b2a37a4e32c868c906aa",27:"5af74cbf1108c7b3ba97",28:"969982665e06903f4729",29:"9280391dff50a2a432ef",30:"c017188f78b01d552bf5",31:"5e27603f5f99ea370f70",32:"76027710e54af08dd56d",33:"72213efc74279de2b336",34:"51957fb9144981ed0e8b",38:"53cc12e39c138e5e551a",39:"530a4e8c5c1d103b5873"}[e]+".js";var d=setTimeout(c,12e4);return o.onerror=o.onload=c,f.appendChild(o),n},a.m=e,a.c=r,a.d=function(e,c,r){a.o(e,c)||Object.defineProperty(e,c,{configurable:!1,enumerable:!0,get:r})},a.n=function(e){var c=e&&e.__esModule?function(){return e.default}:function(){return e};return a.d(c,"a",c),c},a.o=function(e,a){return Object.prototype.hasOwnProperty.call(e,a)},a.p="",a.oe=function(e){throw console.error(e),e}}([]);</script>
-    <script src="/jfe/static/dist/vendor.944ec92fd0786e9660e8.js" crossorigin="anonymous"></script>
-    <script src="/jfe/static/dist/jfe.d1e2d18964d1e2b1cdaf.js" crossorigin="anonymous"></script>
+    #pace::before {
+      content: '';
+      display: block;
+      position: fixed;
+      top: 30%;
+      right: 50%;
+      width: 50px;
+      height: 50px;
+      border: 6px solid transparent;
+      border-top-color: #0b6ed0;
+      border-left-color: #0b6ed0;
+      border-radius: 80px;
+      animation: q 1s linear infinite;
+      margin: -33px -33px 0 0;
+      box-sizing: border-box
+    }
 
-    <link id="rtlStyles" rel="stylesheet" type="text/css">
-    <style id="customStyles"></style>
+    @keyframes q {
+      0% {
+        transform: rotate(0)
+      }
 
-    <style>
-      .JFEScope .questionFocused   .advanceButtonContainer {transition:opacity .3s!important;visibility:unset;opacity:1}
-      .JFEScope .questionUnfocused .advanceButtonContainer, .advanceButtonContainer {transition:opacity .3s!important;visibility:hidden;opacity:0}
-      .Skin .Bipolar .bipolar-mobile-header, .Skin .Bipolar .desktop .bipolar-mobile-header, .Skin .Bipolar .mobile .ColumnLabelHeader {display: none}
+      100% {
+        transform: rotate(360deg)
+      }
+    }
+  </style>
 
-      /* Change color of question validation warnings */
-      .Skin .ValidationError.Warn {color: #e9730c;}
+  <link id="rtlStyles" rel="stylesheet" type="text/css">
+  <style id="customStyles"></style>
 
-      /* Hide mobile preview scrollbar for Chrome, Safari and Opera */
-      html.MobilePreviewFrame::-webkit-scrollbar { display: none; }
+  <style>
+    .JFEScope .questionFocused .advanceButtonContainer {
+      transition: opacity .3s !important;
+      visibility: unset;
+      opacity: 1
+    }
 
-      /* Hide mobile preview scrollbar for IE and Edge */
-      html.MobilePreviewFrame { -ms-overflow-style: none; scrollbar-width: none; }
-    </style>
-    <style type="text/css">.accessibility-hidden{height:0;width:0;overflow:hidden;position:absolute;left:-999px}</style>
-    <div id="polite-announcement" class="accessibility-hidden" aria-live="polite" aria-atomic="true">You are on the next page</div>
-    <div id="assertive-announcement" class="accessibility-hidden" aria-live="assertive" role="alert" aria-atomic="true"></div>
-    <script type="text/javascript">
-      (function () {
-        var o = {};
-        try {
-          Object.defineProperty(o,'compat',{value:true,writable:true,enumerable:true,configurable:true});
-        } catch (e) {};
-        if (o.compat !== true || document.addEventListener === undefined) {
-          window.location.pathname = '/jfe/incompatibleBrowser';
-        }
+    .JFEScope .questionUnfocused .advanceButtonContainer,
+    .advanceButtonContainer {
+      transition: opacity .3s !important;
+      visibility: hidden;
+      opacity: 0
+    }
 
-        var fv = document.createElement('link');
-        fv.rel = 'apple-touch-icon';
-        fv.href = "/brand-management/apple-touch-icon";
-        document.getElementsByTagName('head')[0].appendChild(fv);
-      })();
-      QSettings.ab = false;
-      document.title = "Qualtrics Survey | Qualtrics Experience Management";
-      
-      (function(s) {
-        QSettings.bootstrapSkin = s;
-        var sp = document.getElementById('skinPrefetch');
-        if (sp) {
-          sp.innerHTML = s;
-        }
-      })("\n<meta name=\"HandheldFriendly\" content=\"true\" />\n<meta name = \"viewport\" content = \"user-scalable = yes, maximum-scale=10, minimum-scale=1, initial-scale = 1, width = device-width\" />\n<div class='Skin'>\n\t<div id=\"Overlay\"></div>\n\t<div id=\"Wrapper\">\n\n\t\t<div class='SkinInner'>\n\t\t\t<div id='LogoContainer'>\n\t\t\t\t<div id='Logo'></div>\n\t\t\t</div>\n\t\t\t\n\t\t\t<div id='HeaderContainer'>\n\t\t\t\t\n\t\t\t\t<div id='Header'>{~Header~}</div>\n\t\t\t</div>\n\t\t\t<div id='SkinContent'>\n\t\t\t\t<div id='Questions'>{~Question~}</div>\n\t\t\t\t<div id='Buttons'>{~Buttons~}</div>\n\t\t\t</div>\n\t\t\t<div id='ProgressBar'>{~ProgressBar~}</div>\n\t\t</div>\n\t\t<div id='Footer'>{~Footer~}</div>\n\t\t\n\t\t<div id='PushStickyFooter'></div>\n\t</div>\n\t<div id=\"Plug\" style=\"display:block !important;\"><a href=\"https://www.qualtrics.com/powered-by-qualtrics/?utm_source=internal%2Binitiatives&utm_medium=survey%2Bpowered%2Bby%2Bqualtrics&utm_content={~BrandID~}&utm_survey_id={~SurveyID~}\" target=\"_blank\" aria-label=\"{~PlugLabel~}\">{~Plug~}</a></div>\n</div>\n<script>Qualtrics.SurveyEngine.addOnload(Qualtrics.uniformLabelHeight);<\/script>\n\n<script>\n//TM6 Question Text Cell Padding\n\t//JFE\n\tPage.on('ready:imagesLoaded',function() {\n\t\tvar t = jQuery(\".QuestionText table\");\n\t  for (i=0; i<t.length; i++) {\n\t    if (t[i].cellPadding != undefined) {\n\t      var p = t[i].cellPadding + \"px\";\n\t      t.eq(i).find(\"th\").css(\"padding\",p);\n\t      t.eq(i).find(\"td\").css(\"padding\",p);\n\t    }\n\t  }\n\t});\n\t//SE\n\tjQuery(window).load(function() {\n\t\tif (jQuery(\"div\").hasClass(\"JFE\") == false) {\n\t    var t = jQuery(\".QuestionText table\");\n\t    for (i=0; i<t.length; i++) {\n\t      if (t[i].cellPadding != undefined) {\n\t        var p = t[i].cellPadding + \"px\";\n\t        t.eq(i).find(\"th\").css(\"padding\",p);\n\t        t.eq(i).find(\"td\").css(\"padding\",p);\n\t      }\n\t    }\n\t\t};\n\t});\n//TM21 iOS Text Box Width Fix\n\t//JFE\n\tPage.on('ready:imagesLoaded',function() {\n\t\tfunction isIE () {\n\t  \tvar myNav = navigator.userAgent.toLowerCase();\n\t  \treturn (myNav.indexOf('msie') != -1) ? parseInt(myNav.split('msie')[1]) : false;\n\t\t}\n\t\tif (!isIE()) {\n\t\t\tvar mq = window.matchMedia( \"(max-width: 480px)\" );\n\t\t\tif (mq.matches == true) {\n\t\t\t\tjQuery(\".Skin .MC .TextEntryBox\").css(\"width\",\"100%\");\n\t\t\t\tjQuery(\".Skin .TE .ESTB .InputText\").css(\"width\",\"100%\");\n\t\t\t\tjQuery(\".Skin .TE .FORM .InputText\").css(\"width\",\"100%\");\n\t\t\t\tjQuery(\".Skin .TE .ML .InputText\").css(\"width\",\"100%\");\n\t\t\t\tjQuery(\".Skin .TE .PW .InputText\").css(\"width\",\"100%\");\n\t\t\t\tjQuery(\".Skin .TE .SL .InputText\").css(\"width\",\"100%\");\n\t\t\t\tjQuery(\".Skin .TE .FollowUp .InputText\").css(\"width\",\"100%\");\n\t\t\t};\n\t\t};\n\t});\n\t//SE\n\tjQuery(window).load(function() {\n\t\tfunction isIE () {\n\t  \tvar myNav = navigator.userAgent.toLowerCase();\n\t  \treturn (myNav.indexOf('msie') != -1) ? parseInt(myNav.split('msie')[1]) : false;\n\t\t}\n\t\tif (!isIE()) {\n\t\t\tvar mq = window.matchMedia( \"(max-width: 480px)\" );\n\t\t\tif (jQuery(\"div\").hasClass(\"JFE\") == false && mq.matches == true) {\n\t\t\t\tjQuery(\".Skin .MC .TextEntryBox\").css(\"width\",\"100%\");\n\t\t\t\tjQuery(\".Skin .TE .ESTB .InputText\").css(\"width\",\"100%\");\n\t\t\t\tjQuery(\".Skin .TE .FORM .InputText\").css(\"width\",\"100%\");\n\t\t\t\tjQuery(\".Skin .TE .ML .InputText\").css(\"width\",\"100%\");\n\t\t\t\tjQuery(\".Skin .TE .PW .InputText\").css(\"width\",\"100%\");\n\t\t\t\tjQuery(\".Skin .TE .SL .InputText\").css(\"width\",\"100%\");\n\t\t\t\tjQuery(\".Skin .TE .FollowUp .InputText\").css(\"width\",\"100%\");\n\t\t\t};\n\t\t};\n\t});\n<\/script>\n<script>\n//Wrapping up those pesky SE labels like Christmas\njQuery(window).load(function() {\n\t\tif (jQuery(\"div\").hasClass(\"JFE\") == false) {\n\t    var mcs = jQuery(\".Skin .MC span.LabelWrapper\");\n\t\t\tfor (i = 0; i < mcs.length; i++) {\n\t\t\t\tmcs.eq(i).find(\"label\").wrapInner(\"<span></span>\");\n\t\t\t}\n\t};\n});\n<\/script>\n<script>\n\tPage.on('ready:imagesLoaded',function() {\n\tif (jQuery(\".ProgressBarContainer label\").length != 0  && jQuery(\".SystemEndOfSurvey\").length == 0){\njQuery(\"#ProgressBar\").addClass(\"verbose\");\n\t}\n\t});\n<\/script>\n\n");
-      
-      
-      (function() {
-        var fv = document.createElement('link');
-        fv.type = 'image/x-icon';
-        fv.rel = 'icon';
-        fv.href = "https://hmrccustomerlab.qualtrics.com/brand-management/brand-assets/hmrccustomerlab/favicon.ico";
-        document.getElementsByTagName('head')[0].appendChild(fv);
-      }());
-      
-      
-    </script>
-        <script type="text/javascript">
-          (function(appData) {
-            if (appData && typeof appData === 'object' && '__jfefeRenderDocument' in appData) {
-              var doc = appData.__jfefeRenderDocument
+    .Skin .Bipolar .bipolar-mobile-header,
+    .Skin .Bipolar .desktop .bipolar-mobile-header,
+    .Skin .Bipolar .mobile .ColumnLabelHeader {
+      display: none
+    }
 
-              if (doc === 'incompatible') {
-                window.location = '/jfe/incompatibleBrowser';
-                return
-              }
+    /* Change color of question validation warnings */
+    .Skin .ValidationError.Warn {
+      color: #e9730c;
+    }
 
-              window.addEventListener('load', function() {
-                // farewell jfe
-                delete window.QSettings
-                delete window.webpackJsonp
-                delete window.jQuery
-                delete window.ErrorWatcher
-                delete window.onLoadCaptcha
-                delete window.experimental
-                delete window.Page
+    /* Hide mobile preview scrollbar for Chrome, Safari and Opera */
+    html.MobilePreviewFrame::-webkit-scrollbar {
+      display: none;
+    }
 
-                var keys = Object.keys(window);
-                for (let i in keys) {
-                  var name = keys[i];
-                  if (name.indexOf('jQuery') === 0) {
-                    delete window[name];
-                    break;
-                  }
-                }
+    /* Hide mobile preview scrollbar for IE and Edge */
+    html.MobilePreviewFrame {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+  <style type="text/css">
+    .accessibility-hidden {
+      height: 0;
+      width: 0;
+      overflow: hidden;
+      position: absolute;
+      left: -999px
+    }
+  </style>
+  <div id="polite-announcement" class="accessibility-hidden" aria-live="polite" aria-atomic="true">You are on the next
+    page</div>
+  <div id="assertive-announcement" class="accessibility-hidden" aria-live="assertive" role="alert" aria-atomic="true">
+  </div>
+  <div class="JFE" id="P_1717676575431">
+    <div class="JFEContent SkinV2 webkit CSS3">
+      <form id="Page" name="Page" class="Page ActivePage" data-testid="page-ready">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport"
+          content="user-scalable = yes, maximum-scale=10, minimum-scale=1, initial-scale = 1, width = device-width">
+        <div class="Skin">
+          <div id="Overlay"></div>
+          <div id="Wrapper">
+            <div class="SkinInner">
+              <div id="LogoContainer">
+                <div id="Logo"></div>
+              </div>
+              <div id="HeaderContainer">
+                <div id="Header" role="banner"><img alt="HM Revenue and Customs logo"
+                    src="https://hmrccustomerlab.qualtrics.com/CP/Graphic.php?IM=IM_esxGhuCLgcHXGsu"
+                    style="width: 400px; height: 47px;" data-image-state="ready"></div>
+              </div>
+              <div id="SkinContent">
+                <div id="Questions" role="main">
+                  <div id="QID3Separator" class="Separator" data-runtime-show="runtime.SeparatorDisplayed"></div>
+                  <div class="QuestionOuter BorderColor TE  QID3" id="QID3" questionid="QID3" posttag="QID3"
+                    data-runtime-remove-class-hidden="runtime.Displayed">
+                    <div id="QR~QID3~VALIDATION" class="ValidationError" role="alert"
+                      data-runtime-show="runtime.ErrorMsg" data-runtime-html="runtime.ErrorMsg" style="display: none;">
+                    </div>
+                    <div id="QR~QID3~SDPVALIDATION" class="ValidationError" role="alert"
+                      data-runtime-show="runtime.PDPErrorMsg" data-runtime-html="runtime.PDPErrorMsg">Please answer this
+                      question.</div>
+                    <div class="Inner BorderColor SL">
+                      <div class="InnerInner BorderColor">
+                        <fieldset aria-describedby="QR~QID3~VALIDATION QR~QID3~SDPVALIDATION">
+                          <legend><label for="QR~QID3" class="QuestionText BorderColor">
+                              <h1><span style="font-size: 22px; outline: rgb(0, 0, 0) solid 0px;" tabindex="-1">Example question page with error message</span></h1>
+                              <p>Hint text for question</p>
+                            </label></legend>
+                          <div class="QuestionBody">
+                            <div class="ChoiceStructure"> <input type="TEXT" autocomplete="off" id="QR~QID3" value=""
+                                class="InputText QR-QID3 QWatchTimer" name="QR~QID3~TEXT"
+                                data-runtime-textvalue="runtime.Value" aria-describedby="QR~QID3~VALIDATION"> </div>
+                          </div>
+                        </fieldset>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="Buttons" role="navigation"><input id="PreviousButton" class="PreviousButton Button"
+                    title="Previous" type="button" name="PreviousButton" value="Previous"
+                    data-runtime-disabled="runtime.Disabled" data-runtime-aria-label="runtime.ariaLabel"
+                    data-runtime-hide="runtime.Hide" page-id="P_1717676575431" aria-label="Previous"><input
+                    id="NextButton" class="NextButton Button" title="Next" type="button" name="NextButton" value="Next"
+                    data-runtime-disabled="runtime.Disabled" data-runtime-aria-label="runtime.ariaLabel"
+                    data-runtime-hide="runtime.Hide" page-id="P_1717676575431" aria-label="Next"></div>
+              </div>
+              <div id="ProgressBar"></div>
+            </div>
+            <div id="Footer" role="contentinfo"></div>
 
-                document.open();
-                document.write(doc);
-                document.close();
-              })
-            } else {
-              // prevent document.write from replacing the entire page
-              window.document.write = function() {
-                log.error('document.write is not allowed and has been disabled.');
-              };
-
-              QSettings.setPT(true, appData);
-            }
-          })({"FormSessionID":"FS_2QoX1Sl2fvWxQye","QuestionIDs":["QID1"],"QuestionDefinitions":{"QID1":{"DefaultChoices":false,"DataExportTag":"INTRO","QuestionID":"QID1","QuestionType":"DB","Selector":"TB","DataVisibility":{"Private":false,"Hidden":false},"Configuration":{"QuestionDescriptionOption":"UseText"},"ChoiceOrder":[],"Validation":{"Settings":{"Type":"None"}},"GradingData":[],"Language":{"EN":{"QuestionText":"<h1><span style=\"font-size:22px;\">We need your feedback to improve the HMRC YouTube channel</span></h1>\n\n<div>&nbsp;</div>\nThis survey is being run by researchers in HMRC, alongside the team that manage the HMRC YouTube channel.<br />\n&nbsp;\n<ul>\n\t<li>This survey will help us understand your experience of the HMRC YouTube channel, and make improvements to the videos we provide</li>\n\t<li>It will take around 5 to 10 minutes to complete</li>\n\t<li>It is up to you whether you take part, and you can change your mind at any time</li>\n\t<li>Any answers you give will be anonymous and used for research purposes only</li>\n\t<li>Your data is protected by law.&nbsp;<a href=\"https://www.gov.uk/government/publications/data-protection-act-dpa-information-hm-revenue-and-customs-hold-about-you/data-protection-act-dpa-information-hm-revenue-and-customs-hold-about-you\">You can find more information about how your data is processed and protected in HMRC&#39;s Privacy Notice.</a></li>\n\t<li>We endeavour to make our surveys as accessible as possible. To see the accessibility statement for this Qualtrics product please contact the research team at the email address below.</li>\n\t<li>If you have any questions, please contact <a href=\"mailto:customerlabsurveys@hmrc.gov.uk?subject=RE%3A%20HMRC%20YouTube%20feedback%20survey\">customerlabsurveys@hmrc.gov.uk</a></li>\n</ul>\n<br />\nThank you for taking the time to share your views."}},"NextChoiceId":4,"NextAnswerId":1,"SurveyLanguage":"EN"}},"NextButton":null,"PreviousButton":false,"Count":1,"Skipped":0,"NotDisplayed":0,"LanguageSelector":null,"Messages":{"ModalDialogMessages":{"UnansweredQuestion":"There is 1 unanswered question on this page","UnansweredQuestions":"There are %1 unanswered questions on this page","ContinueQuestion":"Would you like to continue?","AnswerQuestion":"Answer the Question","AnswerQuestions":"Answer the Questions","ContinueWithoutAnswering":"Continue Without Answering","RequestResponseTitle":"Response Requested","Continue":"Continue","ModifyAnswers":"Modify Answers","PDPQuestionDialogSingle":"It looks like you may have entered some sensitive information in a question","PDPQuestionDialogMultiple":"It looks like you may have entered some sensitive information in %1 questions"},"PoweredByQualtrics":"Powered by Qualtrics","PoweredByQualtricsLabel":"Powered by Qualtrics: Learn more about Qualtrics in a new tab","A11yNextPage":"You are on the next page","A11yPageLoaded":"Page Loaded","A11yPageLoading":"Page is loading","A11yPrevPage":"You are on the previous page","FailedToReachServer":"We were unable to connect to our servers. Please check your internet connection and try again.","ConnectionError":"Connection Error","IPDLError":"Sorry, an unexpected error occurred.","Retry":"Retry","Cancel":"Cancel","Language":"Language","Done":"Done","AutoAdvanceLabel":"or press Enter","DecimalSeparator":"Please exclude commas and if necessary use a point as a decimal separator.","IE11Body":"You are using an unsupported browser. Qualtrics surveys will no longer load in Internet Explorer 11 after March 15, 2024.","BipolarPreference":"Select this answer if you prefer %1 over %2 by %3 points.","BipolarNoPreference":"Select this answer if you have no preference between %1 and %2.","Blank":"Blank","CaptchaRequired":"Answering the captcha is required to proceed","MCMSB_Instructions":"To select multiple options in a row, click and drag your mouse or hold down Shift when selecting. To select non-sequential options, hold down Control (on a PC) or Command (on a Mac) when clicking. To deselect an option, hold down Control or Command and click on a selected option.","MLDND_Instructions":"Drag and drop each item from the list into a bucket.","PGR_Instructions":"Drag and drop items into groups. Within each group, rank items by dragging and dropping them into place.","ROSB_Instructions":"Select items and then rank them by clicking the arrows to move each item up and down."},"IsPageMessage":false,"ErrorCode":null,"PageMessageTranslations":{},"CurrentLanguage":"EN","FallbackLanguage":"EN","QuestionRuntimes":{"QID1":{"Highlight":false,"ID":"QID1","Type":"DB","Selector":"TB","SubSelector":null,"ErrorMsg":null,"TerminalAuthError":false,"Valid":false,"MobileFirst":false,"QuestionTypePluginProperties":null,"CurrentMultiPageQuestionIndex":0,"Displayed":true,"PreValidation":{"Settings":{"Type":"None"}},"IsAutoAuthFailure":false,"ErrorSeverity":null,"PDPErrorMsg":null,"PDPError":null,"QuestionText":"<h1><span style=\"font-size:22px;\">We need your feedback to improve the HMRC YouTube channel</span></h1>\n\n<div>&nbsp;</div>\nThis survey is being run by researchers in HMRC, alongside the team that manage the HMRC YouTube channel.<br />\n&nbsp;\n<ul>\n\t<li>This survey will help us understand your experience of the HMRC YouTube channel, and make improvements to the videos we provide</li>\n\t<li>It will take around 5 to 10 minutes to complete</li>\n\t<li>It is up to you whether you take part, and you can change your mind at any time</li>\n\t<li>Any answers you give will be anonymous and used for research purposes only</li>\n\t<li>Your data is protected by law.&nbsp;<a href=\"https://www.gov.uk/government/publications/data-protection-act-dpa-information-hm-revenue-and-customs-hold-about-you/data-protection-act-dpa-information-hm-revenue-and-customs-hold-about-you\">You can find more information about how your data is processed and protected in HMRC&#39;s Privacy Notice.</a></li>\n\t<li>We endeavour to make our surveys as accessible as possible. To see the accessibility statement for this Qualtrics product please contact the research team at the email address below.</li>\n\t<li>If you have any questions, please contact <a href=\"mailto:customerlabsurveys@hmrc.gov.uk?subject=RE%3A%20HMRC%20YouTube%20feedback%20survey\">customerlabsurveys@hmrc.gov.uk</a></li>\n</ul>\n<br />\nThank you for taking the time to share your views.","Active":true}},"IsEOS":false,"FailedValidation":false,"PDPValidationFailureQuestionIDs":[],"BlockID":"BL_54NOj5cmvECXOGG","FormTitle":"Qualtrics Survey | Qualtrics Experience Management","SurveyMetaDescription":"The most powerful, simple and trusted way to gather experience data. Start your journey to experience management and try a free account today.","TableOfContents":null,"UseTableOfContents":false,"SM":{"BaseServiceURL":"https://hmrccustomerlab.qualtrics.com","SurveyVersionID":"9223370319452654503","IsBrandEncrypted":false,"JFEVersionID":"8c3fb57560308bc2d53a3212357a5801a5ce32ff","BrandDataCenterURL":"https://lhr1.qualtrics.com","XSRFToken":"AwETbow_7RQE-JXehXpETA","StartDate":"2024-06-06 12:22:55","StartDateRaw":1717676575248,"BrandID":"hmrccustomerlab","SurveyID":"SV_bvaFKBiaUbvJfgy","BrowserName":"Chrome","BrowserVersion":"124.0.0.0","OS":"Macintosh","UserAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36","LastUserAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36","QueryString":"","IP":"2.121.183.75","URL":"https://hmrccustomerlab.qualtrics.com/jfe/form/SV_bvaFKBiaUbvJfgy","BaseHostURL":"https://hmrccustomerlab.qualtrics.com","ProxyURL":"https://hmrccustomerlab.qualtrics.com/jfe/form/SV_bvaFKBiaUbvJfgy","JFEDataCenter":"jfe2","dataCenterPath":"jfe2","IsPreview":false,"LinkType":"anonymous","geoIPLocation":{"IPAddress":"2.121.183.75","City":"Prestonpans","CountryName":"United Kingdom","CountryCode":"GB","Region":"ELN","RegionName":"East Lothian","PostalCode":"EH32","Latitude":55.9685,"Longitude":-2.8857,"MetroCode":0,"Private":false},"geoIPV2Enabled":true,"EDFromRequest":[],"FormSessionID":"FS_2QoX1Sl2fvWxQye"},"ED":{"SID":"SV_bvaFKBiaUbvJfgy","SurveyID":"SV_bvaFKBiaUbvJfgy","Q_URL":"https://hmrccustomerlab.qualtrics.com/jfe/form/SV_bvaFKBiaUbvJfgy","UserAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36","Q_CHL":"anonymous","Q_LastModified":1717425130,"Q_Language":"EN"},"PostToStartED":{},"FormRuntime":null,"RuntimePayload":"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","TransactionID":1,"ReplacesOutdated":false,"EOSRedirectURL":null,"RedirectURL":null,"SaveOnPageUnload":true,"ProgressPercent":0,"ProgressBarText":"Survey Completion","ProgressAccessibleText":"Current Progress","FormOptions":{"BackButton":true,"SaveAndContinue":true,"SurveyProtection":"PublicSurvey","BallotBoxStuffingPrevention":false,"NoIndex":"Yes","SecureResponseFiles":true,"SurveyExpiration":"None","SurveyTermination":"DisplayMessage","Header":"<img alt=\"HM Revenue and Customs logo\" src=\"https://hmrccustomerlab.qualtrics.com/CP/Graphic.php?IM=IM_esxGhuCLgcHXGsu\" style=\"width: 400px; height: 47px;\" />","Footer":"","ProgressBarDisplay":"None","PartialData":"No","ValidationMessage":null,"PreviousButton":{"Display":"Previous"},"NextButton":{"Display":"Next"},"SurveyTitle":"Qualtrics Survey | Qualtrics Experience Management","SkinLibrary":"hmrccustomerlab","SkinType":"templated","Skin":"qualtrics.base:null:afda72faeb5589a0b4690f42ea08cd43aa71ccd7","NewScoring":1,"SurveyMetaDescription":"The most powerful, simple and trusted way to gather experience data. Start your journey to experience management and try a free account today.","EOSMessage":"MS_bPGVJj5PPAnKxlc","ShowExportTags":false,"CollectGeoLocation":false,"PasswordProtection":"No","AnonymizeResponse":"No","RefererCheck":"No","BallotBoxStuffingPreventionBehavior":"DefaultMessage","BallotBoxStuffingPreventionMessage":null,"BallotBoxStuffingPreventionMessageLibrary":null,"BallotBoxStuffingPreventionURL":null,"RecaptchaV3":false,"ConfirmStart":false,"AutoConfirmStart":false,"RelevantID":false,"UseCustomSurveyLinkCompletedMessage":null,"SurveyLinkCompletedMessage":null,"SurveyLinkCompletedMessageLibrary":null,"ResponseSummary":"No","EOSMessageLibrary":"UR_9HMoEzeRMshWWSa","EOSRedirectURL":null,"EmailThankYou":false,"ThankYouEmailMessageLibrary":null,"ThankYouEmailMessage":null,"ValidateMessage":false,"ValidationMessageLibrary":null,"InactiveSurvey":"DefaultMessage","PartialDeletion":"+1 week","PartialDataCloseAfter":"LastActivity","InactiveMessageLibrary":null,"InactiveMessage":null,"AvailableLanguages":{"EN":[]},"CustomStyles":{"customCSS":""},"QuestionsPerPage":"1","ProtectSelectionIds":true,"SurveyName":"2301 YouTube feedback survey - To go live","headerLid":"UR_9HMoEzeRMshWWSa","headerMid":"MS_081HOknSPvuBDWC","SurveyLanguage":"EN","ActiveResponseSet":"RS_1yTuIXx755wWueW","SurveyStartDate":"-0001-11-30 06:59:56","SurveyExpirationDate":"-0001-11-30 06:59:56","SurveyCreationDate":"2024-04-03 09:35:30","SkinOptions":{"Version":3,"AnyDeviceSupport":true,"Icons":{"favicon":"https://hmrccustomerlab.qualtrics.com/brand-management/brand-assets/hmrccustomerlab/favicon.ico","appleTouchIcon":"/brand-management/apple-touch-icon","ogImage":""},"BrandingOnly":{"header":"","footer":"","css":"","html":""},"ProgressBarPosition":"top","Logo":"","LogoPosition":"left","LogoBanner":false,"QuestionsContainer":false,"MCButtonChoices":false,"NPSMobileVertical":false,"LayoutSpacing":0.5,"FallbackSkin":false},"SkinBaseCss":"/jfe/themes/templated-skins/qualtrics.base:null:afda72faeb5589a0b4690f42ea08cd43aa71ccd7/version-1712159444934-3f1e6a/stylesheet.css","PageTransition":"none","Favicon":"https://hmrccustomerlab.qualtrics.com/brand-management/brand-assets/hmrccustomerlab/favicon.ico","CustomLanguages":null,"SurveyTimezone":"America/Denver","LinkType":"anonymous","Language":"EN","Languages":null,"DefaultLanguages":{"AR":"العربية","ASM":"অসমীয়া","AZ-AZ":"Azərbaycan dili","BEL":"Беларуская","BG":"Български","BS":"Bosanski","BN":"বাংলা","CA":"Català","CEB":"Bisaya","CKB":"كوردي","CS":"Čeština","CY":"Cymraeg","DA":"Dansk","DE":"Deutsch","EL":"Ελληνικά","EN":"English","EN-GB":"English (United Kingdom)","EN_GB":"English (Great Britain)","EO":"Esperanto","ES":"Español (América Latina)","ES-ES":"Español","ET":"Eesti","FA":"فارسی","FI":"Suomi","FR":"Français","FR-CA":"Français (Canada)","GU":"ગુજરાતી ","HE":"עברית","HI":"हिन्दी","HIL":"Hiligaynon","HR":"Hrvatski","HU":"Magyar","HYE":"Հայերեն","ID":"Bahasa Indonesia","ISL":"Íslenska","IT":"Italiano","JA":"日本語","KAN":"ಕನ್ನಡ","KAT":"ქართული","KAZ":"Қазақ","KM":"ភាសាខ្មែរ","KO":"한국어","LV":"Latviešu","LT":"Lietuviškai","MAL":"മലയാളം","MAR":"मराठी","MK":"Mакедонски","MN":"Монгол","MS":"Bahasa Malaysia","MY":"မြန်မာဘာသာ","NE":"नेपाली","NL":"Nederlands","NO":"Norsk","ORI":"ଓଡ଼ିଆ ଭାଷା","PA-IN":"ਪੰਜਾਬੀ (ਗੁਰਮੁਖੀ)","PL":"Polski","PT":"Português","PT-BR":"Português (Brasil)","RI-GI":"Rigi","RO":"Română","RU":"Русский","SIN":"සිංහල","SK":"Slovenčina","SL":"Slovenščina","SO":"Somali","SQI":"Shqip","SR":"Srpski","SR-ME":"Crnogorski","SV":"Svenska","SW":"Kiswahili","TA":"தமிழ்","TEL":"తెలుగు","TGL":"Tagalog","TH":"ภาษาไทย","TR":"Tϋrkçe","UK":"Українська","UR":"اردو","VI":"Tiếng Việt","ZH-S":"简体中文","ZH-T":"繁體中文","Q_DEV":"Developer"},"ThemeURL":"//eu.qualtrics.com/WRQualtricsShared/"},"Header":"<img alt=\"HM Revenue and Customs logo\" src=\"https://hmrccustomerlab.qualtrics.com/CP/Graphic.php?IM=IM_esxGhuCLgcHXGsu\" style=\"width: 400px; height: 47px;\" />","HeaderMessages":{"EN":{"Display":"<img alt=\"HM Revenue and Customs logo\" src=\"https://hmrccustomerlab.qualtrics.com/CP/Graphic.php?IM=IM_esxGhuCLgcHXGsu\" style=\"width: 400px; height: 47px;\" />"}},"Footer":"","FooterMessages":{},"HasJavaScript":false,"IsSystemMessage":false,"FeatureFlags":{"JFE_BlockPrototypeJS":false},"TransformData":{},"AllowJavaScript":true,"NextButtonText":"Next","PreviousButtonText":"Previous","NextButtonAriaLabel":"Next","PreviousButtonAriaLabel":"Previous","BrandType":"Corporate","FilteredEDKeys":[],"CookieActions":{"Set":[],"Clear":[]}})
-        </script>
-    
-
-<div class="JFE" id="P_1717676575431"><div class="JFEContent SkinV2 webkit CSS3"><form id="Page" name="Page" class="Page ActivePage" data-testid="page-ready">
-<meta name="HandheldFriendly" content="true">
-<meta name="viewport" content="user-scalable = yes, maximum-scale=10, minimum-scale=1, initial-scale = 1, width = device-width">
-<div class="Skin">
-	<div id="Overlay"></div>
-	<div id="Wrapper">
-
-		<div class="SkinInner">
-			<div id="LogoContainer">
-				<div id="Logo"></div>
-			</div>
-			
-			<div id="HeaderContainer">
-				
-				<div id="Header" role="banner"><img alt="HM Revenue and Customs logo" src="https://hmrccustomerlab.qualtrics.com/CP/Graphic.php?IM=IM_esxGhuCLgcHXGsu" style="width: 400px; height: 47px;" data-image-state="ready"></div>
-			</div>
-			<div id="SkinContent">
-				<div id="Questions" role="main"><div id="QID3Separator" class="Separator" data-runtime-show="runtime.SeparatorDisplayed"></div><div class="QuestionOuter BorderColor TE  QID3" id="QID3" questionid="QID3" posttag="QID3" data-runtime-remove-class-hidden="runtime.Displayed"> <div id="QR~QID3~VALIDATION" class="ValidationError" role="alert" data-runtime-show="runtime.ErrorMsg" data-runtime-html="runtime.ErrorMsg" style="display: none;"></div>
-                <div id="QR~QID3~SDPVALIDATION" class="ValidationError" role="alert" data-runtime-show="runtime.PDPErrorMsg" data-runtime-html="runtime.PDPErrorMsg">Please answer this question.</div>
-                <div class="Inner BorderColor SL"> <div class="InnerInner BorderColor"> <fieldset aria-describedby="QR~QID3~VALIDATION QR~QID3~SDPVALIDATION"> <legend><label for="QR~QID3" class="QuestionText BorderColor">
-                <h1><span style="font-size: 22px; outline: rgb(0, 0, 0) solid 0px;" tabindex="-1">Which HMRC YouTube video you were watching when you clicked on this survey?</span></h1>
-&nbsp;
-
-<p>(please specify the title of the video where possible)</p></label></legend><div class="QuestionBody"> <div class="ChoiceStructure">  <input type="TEXT" autocomplete="off" id="QR~QID3" value="" class="InputText QR-QID3 QWatchTimer" name="QR~QID3~TEXT" data-runtime-textvalue="runtime.Value" aria-describedby="QR~QID3~VALIDATION"> </div></div> </fieldset> </div> </div>  </div></div>
-				<div id="Buttons" role="navigation"><input id="PreviousButton" class="PreviousButton Button" title="Previous" type="button" name="PreviousButton" value="Previous" data-runtime-disabled="runtime.Disabled" data-runtime-aria-label="runtime.ariaLabel" data-runtime-hide="runtime.Hide" page-id="P_1717676575431" aria-label="Previous"><input id="NextButton" class="NextButton Button" title="Next" type="button" name="NextButton" value="Next" data-runtime-disabled="runtime.Disabled" data-runtime-aria-label="runtime.ariaLabel" data-runtime-hide="runtime.Hide" page-id="P_1717676575431" aria-label="Next"></div>
-			</div>
-			<div id="ProgressBar"></div>
-		</div>
-		<div id="Footer" role="contentinfo"></div>
-		
-		<div id="PushStickyFooter"></div>
-	</div>
-	<div id="Plug" style="display:block !important;"><a href="https://www.qualtrics.com/powered-by-qualtrics/?utm_source=internal%2Binitiatives&amp;utm_medium=survey%2Bpowered%2Bby%2Bqualtrics&amp;utm_content=hmrccustomerlab&amp;utm_survey_id=SV_bvaFKBiaUbvJfgy" target="_blank" aria-label="Powered by Qualtrics: Learn more about Qualtrics in a new tab">Powered by Qualtrics</a></div>
-</div>
-
-
-
-
-
-
-</form></div></div></body></html>
+            <div id="PushStickyFooter"></div>
+          </div>
+          <div id="Plug" style="display:block !important;"><a
+              href="https://www.qualtrics.com/powered-by-qualtrics/?utm_source=internal%2Binitiatives&amp;utm_medium=survey%2Bpowered%2Bby%2Bqualtrics&amp;utm_content=hmrccustomerlab&amp;utm_survey_id=SV_bvaFKBiaUbvJfgy"
+              target="_blank" aria-label="Powered by Qualtrics: Learn more about Qualtrics in a new tab">Powered by
+              Qualtrics</a></div>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
