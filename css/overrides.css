@@ -396,6 +396,12 @@ html .Skin .QuestionBody {
     padding: 0 3px;
 }
 
+@media (max-width: 770px) {
+    html .Skin .QuestionBody {
+        padding: 0 3px !important;
+    }
+}
+
 html .Skin .QuestionBody:empty {
     padding: 0 !important;
 }
@@ -489,6 +495,12 @@ html .Skin #SkinContent textarea:focus {
 html .Skin #SkinContent label + input[type=text],
 html .Skin #SkinContent label + textarea {
     margin:20px 0 0 70px;
+}
+
+@media (max-width: 480px) {
+    html .Skin .MC .TextEntryBox {
+        width: 70% !important;
+    }
 }
 
 html .Skin label.MultipleAnswer {
