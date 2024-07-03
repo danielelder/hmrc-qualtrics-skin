@@ -594,3 +594,38 @@ html .Skin label.SingleAnswer.q-checked.q-focused:hover {
     content: "";
     position: absolute;
 }
+
+@media (-ms-high-contrast:active), screen and (forced-colors: active) {
+   html .Skin label.SingleAnswer.q-focused>span::before {
+       border: 2px solid CanvasText !important;
+       outline: 3px solid Highlight;
+       outline-offset: 0px;
+    }
+
+   html .Skin label.SingleAnswer.q-checked>span::before,
+   html .Skin label.SingleAnswer.q-checked.q-focused>span::before {
+       background-color: CanvasText !important;
+       outline: 10px solid Canvas;
+       outline-offset: -12px;
+    }
+
+    html .Skin label.SingleAnswer.q-checked.q-focused>span::after {
+       border: 3px solid Highlight !important;
+       outline: 10px solid Canvas;
+       content: '';
+       width: 40px;
+       height: 40px;
+       left: 0px;
+       top: 7px;
+       display:inline-block;
+       border-radius: 50%;
+       position: absolute;
+    }
+
+    html .Skin label.MultipleAnswer.q-focused>span::before,
+    html .Skin label.MultipleAnswer.q-checked.q-focused>span::before {
+       border: 2px solid CanvasText !important;
+       outline: 3px solid Highlight !important;
+       outline-offset: 0px;
+    }
+}
