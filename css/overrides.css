@@ -43,6 +43,7 @@ html.JFEScope #Header img {
 /* Footer */
 html .Skin #BrandingFooter, .Skin #Footer {
     border-top: 1px solid #b1b4b6;
+    font-size: 1.125rem;
     margin: auto;
     max-width: none;
 }
@@ -347,18 +348,26 @@ html .Skin .QuestionText h2 {
     margin-bottom: 20px;
 }
 
-html .Skin .QuestionText p {
-    margin-bottom: 20px;
+html .Skin .QuestionText p,
+html .Skin .QuestionText li {
+    font-size: 1.125rem;
+    line-height: 1.2em;
+    margin-bottom: 1rem;
+}
+
+html .Skin .QuestionText li {
+    margin-left: 0.3rem;
 }
 
 html .Skin .QuestionText {
+    font-size: 1.125rem;
     padding: 40px 0 5px;
 }
 
 html .Skin #Buttons {
     padding: 20px 20px 40px !important;
 }
-
+html .QuestionText h1,
 html .QuestionText h1 span {
     font-size: 2.25rem !important;
     line-height: 1.1111111111;
@@ -410,8 +419,11 @@ html .Skin .ValidationError {
     color: #d4351c;
     font-size: 1.1875rem;
     font-weight: 700;
-    margin: 30px 0 0 0;
     padding: 0;
+    margin: 1.8rem 0 0 0;
+    background-size: 1.3rem 1.3rem;
+    text-indent: 1.6rem;
+    background-position: center left;
 }
 
 html .Skin #Buttons {
@@ -424,6 +436,7 @@ html .Skin #SkinContent #Buttons input {
     border: 2px solid transparent;
     border-radius: 0;
     box-shadow: 0 2px 0 #002d18;
+    font-size: 1.125rem;
     margin-right: 15px;
     transition: none;
 }
@@ -459,6 +472,8 @@ html .Skin #SkinContent #Buttons input:focus:not(:active):not(:hover) {
 
 html .Skin #SkinContent legend p {
     color: #505a5f;
+    font-size: 1.125rem;
+    line-height: 1.2em;
 }
 
 html .Skin #SkinContent input[type=text],
@@ -528,6 +543,11 @@ html .Skin label.SingleAnswer.q-checked.q-focused,
 html .Skin label.MultipleAnswer.q-checked.q-focused:hover, 
 html .Skin label.SingleAnswer.q-checked.q-focused:hover {
     background: none;
+}
+
+.Skin label.SingleAnswer>span,
+.Skin label.MultipleAnswer>span {
+    font-size: 1.125rem;
 }
 
 .Skin label.SingleAnswer>span::before {
@@ -628,4 +648,9 @@ html .Skin label.SingleAnswer.q-checked.q-focused:hover {
        outline: 3px solid Highlight !important;
        outline-offset: 0px;
     }
+}
+
+.Skin #Plug a {
+    font-size: 1rem;
+    height: auto;
 }
