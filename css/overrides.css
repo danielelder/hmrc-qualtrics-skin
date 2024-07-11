@@ -423,7 +423,6 @@ html .Skin .ValidationError {
     margin: 1.8rem 0 0 0;
     background-size: 1.3rem 1.3rem;
     text-indent: 1.6rem;
-    background-position: center left;
 }
 
 html .Skin #Buttons {
@@ -519,7 +518,7 @@ html .Skin #SkinContent label + textarea {
 }
 
 html .Skin label.MultipleAnswer {
-    padding: 20px 0 0px 70px !important;
+    padding: 30px 0 0px 70px !important;
     margin-bottom: 6px;
 }
 
@@ -577,9 +576,11 @@ html .Skin label.SingleAnswer.q-checked.q-focused:hover {
 .Skin label.MultipleAnswer>span::before {
     width: 36px;
     height: 36px;
+    top: 20px;
     left: 3px;
     vertical-align: middle;
     margin-right: 10px;
+    margin-top: 0;
     border-radius: 0;
     -webkit-animation: none;
     -moz-animation: none;
@@ -603,7 +604,7 @@ html .Skin label.SingleAnswer.q-checked.q-focused:hover {
 }
 
 .Skin label.MultipleAnswer.q-checked>span::after {
-    top: 20px;
+    top: 30px;
     left: 11px;
     width: 19px;
     height: 8px;
