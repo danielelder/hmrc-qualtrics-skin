@@ -571,6 +571,9 @@ html .Skin label.SingleAnswer.q-checked.q-focused:hover {
 .Skin label.SingleAnswer.q-focused>span::before, 
 .Skin label.SingleAnswer.q-checked.q-focused>span::before {
     box-shadow: inset 0 0 0 8px #fff, 0 0 0 4px #fd0;
+    border: 4px solid #000 !important;
+    height: 32px;
+    width: 32px;
 }
 
 .Skin label.MultipleAnswer>span::before {
