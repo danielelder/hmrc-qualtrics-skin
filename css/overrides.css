@@ -23,6 +23,10 @@ html .Skin #Plug a:focus {
     transition: none;
 }
 
+html .Skin #ProgressBar {
+    display: none;
+}
+
 /* Header */
 html.JFEScope #HeaderContainer {
     background-color: #0b0c0c;
@@ -334,13 +338,15 @@ html.JFEScope .QuestionOuter {
 }
 
 @media (min-width: 40.0625em) {
-    html.JFEScope .QuestionOuter {
+    html.JFEScope .QuestionOuter,
+    html.JFEScope .EndOfSurvey {
         width: 66.6666666667%;
     }
 }
 
 /* Content */
-html .Skin .QuestionText h1 {
+html .Skin .QuestionText h1,
+html .Skin .EndOfSurvey h1 {
     margin-bottom: 30px;
 }
 
@@ -652,6 +658,16 @@ html .Skin label.SingleAnswer.q-checked.q-focused:hover {
        outline: 3px solid Highlight !important;
        outline-offset: 0px;
     }
+}
+
+html .Skin .EndOfSurvey {
+    padding: 40px 0px;
+}
+
+html .Skin .EndOfSurvey p {
+    color: #0b0c0c;
+    font-size: 1.125rem;
+    line-height: 1.2em;
 }
 
 .Skin #Plug a {
