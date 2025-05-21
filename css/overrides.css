@@ -403,6 +403,10 @@ html .Skin .QuestionText h2 {
     margin-bottom: 20px;
 }
 
+html .Skin .QuestionText h3 {
+    margin-bottom: 10px;
+}
+
 html .Skin .QuestionText p,
 html .Skin .QuestionText li {
     font-size: 1.125rem;
@@ -722,4 +726,37 @@ html .Skin .EndOfSurvey p {
 .Skin #Plug a {
     font-size: 1rem;
     height: auto;
+}
+
+html .Skin summary {
+    position: relative;
+        width: -webkit-fit-content;
+        width: fit-content;
+        color: #1d70b8;
+        cursor: pointer;
+        text-decoration: underline;
+        text-decoration-thickness: max(1px, .0625rem);
+        text-underline-offset: .1578em;
+        margin: 0 0 18px -19px;
+}
+
+html .Skin summary:hover {
+    color: #003078;
+    text-decoration-thickness: max(3px, .1875rem, .12em);
+    -webkit-text-decoration-skip-ink: none;
+    text-decoration-skip-ink: none;
+    -webkit-text-decoration-skip: none;
+    text-decoration-skip: none;
+}
+
+html .Skin summary:focus {
+    outline: 3px solid transparent;
+    color: #0b0c0c;
+    background-color: #fd0;
+    box-shadow: 0 -2px #fd0, 0 4px #0b0c0c;
+    text-decoration: none;
+}
+
+html .Skin details {
+    margin-left: 22px;
 }
