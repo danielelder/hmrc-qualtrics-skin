@@ -4,6 +4,10 @@ html.JFEScope {
     overflow-y: scroll;
 }
 
+html.JFEScope .Skin {
+    font-family: arial,sans-serif;
+}
+
 html.JFEScope #SurveyEngineBody {
     background: none;
 }
@@ -129,7 +133,7 @@ html .Skin #PushStickyFooter {
     background: #f4f8fb;
     border-top: 1px solid #b1b4b6;
     color: #0b0c0c;
-    font-family: GDS Transport,arial,sans-serif;
+    font-family: arial,sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-weight: 400;
@@ -184,7 +188,7 @@ html .Skin #PushStickyFooter {
 }
 
 .govuk-footer__link {
-    font-family: GDS Transport,arial,sans-serif;
+    font-family: arial,sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-decoration: underline;
@@ -458,6 +462,7 @@ html .QuestionText a {
     color: #1d70b8;
     text-decoration-thickness: max(1px, .0625rem);
     text-underline-offset: .1578em;
+    word-wrap: break-word;
 }
 
 html .QuestionText a:hover {
