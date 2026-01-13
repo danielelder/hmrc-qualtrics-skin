@@ -14,6 +14,7 @@ This repo contains a subset of the available question types, these are:
 
 * Error messages
 * Footer
+* Details component
 
 ## How to use
 
